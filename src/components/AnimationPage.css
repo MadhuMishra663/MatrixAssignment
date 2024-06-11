@@ -1,0 +1,54 @@
+/* Page.css */
+
+.page-container {
+    display: flex;
+   
+  }
+  
+  .text-container {
+    width: 50%; /* Adjust as needed */
+    padding: 20px;
+  }
+  
+  .image-container {
+    width: 50%; /* Adjust as needed */
+    overflow: hidden; /* This will hide the part of the image outside its container */
+    position: relative;
+    height: 400px;
+   
+  }
+  
+  .slide-from-right {
+    position: absolute;
+    height: 500px;
+    right: 0;
+    animation: slideRightToLeft 5s infinite; /* Adjust animation duration and timing function as needed */
+  }
+  
+  @keyframes slideRightToLeft {
+    0% {
+      right: -100%; /* Initial position */
+    }
+    100% {
+      right: 0; /* Final position */
+    }
+  }
+  .headingpage{
+    text-align: center;
+    background: linear-gradient(to right,#f674f7, #9667d8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-block: 100px;
+  
+  }
+  .headingpage2{
+  margin-inline: 20px;
+  background: linear-gradient(to right,#faca6b, #fe9b9a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+.ul-li{
+  line-height: 40px;
+}

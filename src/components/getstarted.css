@@ -1,0 +1,96 @@
+.getstartedBox{
+    width: 100%;
+    border: 1 px solid white;
+    background: linear-gradient(to right, #8658b8, #bf5dc4);
+    height: 80px;
+    display: flex;
+   
+   
+}
+.getText{
+    margin-left: 30px;
+    font-size: xx-large;
+}
+
+.arrowText{
+    margin-left: 1200px;
+    font-size: xx-large;
+}
+.getTextMain{
+    display: flex;
+    grid-template-columns: repeat(1,2fr);
+    justify-content: space-between;
+    align-items: center;
+}
+.text2{
+   margin-top: 300px;
+   font-size: xx-large;
+   margin-left: 20px;
+    
+}
+.inputText{
+    border: 1px solid white;
+    background-color: transparent;
+    margin-top: 300px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 50px;
+
+    
+}
+.mainGet{
+    background: linear-gradient(to right, #22475b, #0a070f);
+    height: 1000px;
+}
+.submitButton{
+    background: linear-gradient(to right, #8658b8, #bf5dc4);
+    color: white;
+    width: 100px;
+    height: 50px;
+    margin-top: 300px;
+    border-radius: 5px;
+   
+}
+.buttonText{
+    display: flex;
+   
+}
+
+@media (max-width: 1024px) {
+    .text2 {
+        font-size: large; 
+    }
+
+    .inputText {
+        width: 90%;
+    }
+
+    .submitButton {
+        width: 80px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .getstartedBox {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .arrowText {
+        margin-left: 0; 
+        margin-top: 10px; 
+    }
+
+    .text2 {
+        font-size: medium; 
+    }
+
+    .inputText {
+        width: 95%; 
+    }
+
+    .submitButton {
+        width: 70px; 
+    }
+}

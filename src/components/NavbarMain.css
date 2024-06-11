@@ -1,0 +1,107 @@
+.Navbarmainbox{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+    
+    /* height: 655px; */
+}
+.contentText{
+   width: 90%;
+   
+  
+ 
+
+   
+}
+.TextDiv{
+    margin-inline: 90px;
+    margin-block: 100px;
+    >button{
+        background-color: #141414;
+        color: #e1e1e1;
+        border-radius: 5px;
+        border: none;
+    }
+}
+.TextIQTA{
+    background: linear-gradient(to top,#615d66, #dad9db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+.ParaText{
+    color: #e1e1e1;
+}
+.getStartedText2{
+    background: linear-gradient(to right, #8658b8, #bf5dc4);
+    color: white;
+    text-align: center;
+    white-space:nowrap;
+    padding: 25px 38px;
+    gap:20px;
+    border: none;
+    border-radius: 5px;
+   
+  
+}
+.Images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+   
+   
+    
+}
+.ImagesSub{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+  
+    /* height: 100px; */
+    
+
+}
+.Imag{
+    
+    >img{
+        width: 178.31px;
+height: 170px;
+
+border-radius: 10px;
+opacity: 0px;
+
+    }
+}
+@media (max-width: 1024px) {
+    .contentText {
+        width: 80%; 
+    }
+
+    .TextDiv {
+        margin: 30px; 
+    }
+
+    .getStartedText2 {
+        padding: 10px 20px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .Navbarmainbox {
+        grid-template-columns: 1fr; 
+    }
+
+    .contentText {
+        width: 100%;
+    }
+
+    .TextDiv {
+        margin: 20px; 
+    }
+
+    .getStartedText2 {
+        padding: 8px 16px; 
+    }
+}

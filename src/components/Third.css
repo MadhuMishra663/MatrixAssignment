@@ -1,0 +1,25 @@
+.ThirdDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    
+}
+.Images3{
+   
+    width: 50%;
+}
+.Text3{
+    width: 900px;
+    
+    margin-left: 40px;
+    h2{
+        font-weight: lighter;
+        color: #9c979c;
+    }
+}
+.Text3 h2:hover{
+    background: linear-gradient(to right,#5cb9f1, #8291ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

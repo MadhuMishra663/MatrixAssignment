@@ -1,0 +1,85 @@
+.tokenomics {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #111;
+    padding: 20px;
+    height: 1200px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+  }
+  
+  .header h1 {
+    color: #fff;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header nav ul li {
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .actions button {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .actions button:hover {
+    background-color: #3700b3;
+  }
+  
+  .main-content {
+    padding: 20px 0;
+  }
+  
+  .details {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .info p {
+    margin: 5px 0;
+  }
+  
+  .chart-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    display: flex;
+   
+  }
+  
+  .legend {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-inline: 100px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .color-box {
+    width: 20px;
+    height: 20px;
+  }
+  
