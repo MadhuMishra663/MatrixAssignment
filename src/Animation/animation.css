@@ -1,24 +1,18 @@
-/* SlideUpComponent.css */
-.container {
-    position: relative;
-    overflow: hidden;
-    height: 730px; 
-  }
-  
-  .content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-   
-    transition: transform 1.5s ease; /* Add transition for smooth sliding */
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  
-  .active {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animation.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animated-element {
+  background-color: #61dafb;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  font-size: 24px;
+}

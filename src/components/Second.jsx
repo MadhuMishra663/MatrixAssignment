@@ -1,12 +1,12 @@
 import React from 'react'
 import './second.css'
-import Navbar1 from './Navbar1'
-import './Navbar1.css'
+// import Navbar1 from './Navbar1'
+// import './Navbar1.css'
 
 const Second = () => {
   return (
     <>
-    <Navbar1 />
+    {/* <Navbar1 /> */}
     <div className='ImageSecondMain1'>
         <div className='ImageSec2'>
       <div className='Images1'>

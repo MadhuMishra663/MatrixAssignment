@@ -2,6 +2,7 @@ import React from 'react'
 import {ArrowRight} from 'react-feather';
 import './getstarted.css';
 
+
 const GetStarted = () => {
   return (
     <div className='mainGet'>

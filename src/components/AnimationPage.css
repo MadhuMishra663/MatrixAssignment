@@ -1,4 +1,4 @@
-/* Page.css */
+
 
 .page-container {
     display: flex;
@@ -6,13 +6,13 @@
   }
   
   .text-container {
-    width: 50%; /* Adjust as needed */
+    width: 50%; 
     padding: 20px;
   }
   
   .image-container {
-    width: 50%; /* Adjust as needed */
-    overflow: hidden; /* This will hide the part of the image outside its container */
+    width: 50%; 
+    overflow: hidden; 
     position: relative;
     height: 400px;
    
@@ -22,15 +22,15 @@
     position: absolute;
     height: 500px;
     right: 0;
-    animation: slideRightToLeft 5s infinite; /* Adjust animation duration and timing function as needed */
+    animation: slideRightToLeft 5s infinite; 
   }
   
   @keyframes slideRightToLeft {
     0% {
-      right: -100%; /* Initial position */
+      right: -100%;
     }
     100% {
-      right: 0; /* Final position */
+      right: 0; 
     }
   }
   .headingpage{
@@ -51,4 +51,54 @@
   }
 .ul-li{
   line-height: 40px;
+}
+.secondContent{
+  width: 100%;
+  height: 600px;
+  margin-top: 300px;
+  
+ 
+}
+@media (max-width: 600px) {
+  .page-container {
+      flex-direction: column;
+      align-items: center; /* Center items horizontally */
+      text-align: center; /* Center text within its container */
+  }
+  .Images3 {
+      width: auto;
+  }
+  .Text3 {
+      width: 90%; /* Adjust width for better fit on small screens */
+      margin: 20px 0 0 0; /* Reset margins to center text below image */
+
+  }
+  .ul-li{
+    font-size: small;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .page-container {
+      flex-direction: column;
+      align-items: center; /* Center items horizontally */
+      text-align: center; /* Center text within its container */
+  }
+  .Images3 {
+      width: auto;
+  }
+  .Text3 {
+      width: 80%; /* Adjust width for better fit on tablet screens */
+      margin: 20px 0 0 0; /* Reset margins to center text below image */
+  }
+  .ul-li{
+    font-size: small;
+  }
+}
+
+@media (min-width: 1025px) {
+  .page-container {
+      width: 100%;
+     
+  }
 }

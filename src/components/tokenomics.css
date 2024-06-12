@@ -82,4 +82,106 @@
     width: 20px;
     height: 20px;
   }
-  
+  @media (max-width: 600px) {
+    .tokenomics {
+        padding: 10px;
+        height: auto; /* Adjusted for smaller screens */
+    }
+    .header h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+    .header nav ul {
+        gap: 10px;
+    }
+    .header nav ul li {
+        font-size: 0.875rem; /* Smaller font size for mobile */
+    }
+    .actions button {
+        padding: 8px 16px; /* Smaller padding for mobile */
+        font-size: 0.875rem; /* Smaller font size for mobile */
+    }
+    .main-content {
+        padding: 10px 0;
+    }
+    .details {
+        gap: 10px; /* Smaller gap for mobile */
+    }
+    .info p {
+        font-size: x-small; /* Smaller font size for mobile */
+    }
+    .legend {
+        margin-top: 10px;
+        margin-inline: auto; /* Centered for mobile */
+        width: 100%; /* Full width for mobile */
+        max-width: 150px; /* Maximum width for mobile */
+        
+    }
+    .legend-item{
+      height: 40px;
+    }
+    .color-box {
+        width: 15px; /* Smaller size for mobile */
+        height: 15px; /* Smaller size for mobile */
+        span{
+          font-size:x-small;
+        }
+    }
+    /* Decrease size of pie chart for smaller screens */
+    .chart-container {
+        width: 100px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .tokenomics {
+        padding: 15px;
+        height: auto; /* Adjusted for smaller screens */
+    }
+    .header h1 {
+        font-size: small; /* Slightly smaller font size for tablets */
+    }
+    .header nav ul {
+        gap: 15px;
+    }
+    .header nav ul li {
+        font-size: 0.9375rem; /* Slightly smaller font size for tablets */
+    }
+    .actions button {
+        padding: 9px 18px; /* Slightly smaller padding for tablets */
+        font-size: 0.9375rem; /* Slightly smaller font size for tablets */
+    }
+    .main-content {
+        padding: 15px 0;
+    }
+    .details {
+        gap: 15px; /* Smaller gap for tablets */
+    }
+    .info p {
+        font-size: 0.9375rem; /* Slightly smaller font size for tablets */
+    }
+    .legend {
+        margin-top: 15px;
+        margin-inline: auto; /* Centered for tablets */
+        width: 100%; /* Full width for tablets */
+        max-width: 180px; /* Maximum width for tablets */
+    }
+    .color-box {
+        width: 18px; /* Slightly smaller size for tablets */
+        height: 18px; /* Slightly smaller size for tablets */
+        span{
+          font-size: x-small;
+        }
+    }
+    /* Decrease size of pie chart for smaller screens */
+    .chart-container {
+        width: 250px;
+        height: 250px;
+        
+    }
+}
+@media (min-width: 1025px) {
+  .tokenomics {
+      width: 100%;
+  }
+}

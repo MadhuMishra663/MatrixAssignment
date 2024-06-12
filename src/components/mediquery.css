@@ -1,0 +1,47 @@
+@media screen and (max-width: 1024px) {
+    .TextDiv {
+        margin-inline: 20px;
+        margin-block: 50px;
+    }
+
+    .getStartedText,
+    .getStartedText2 {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Navbarmainbox {
+        grid-template-columns: 1fr;
+    }
+
+    .contentText {
+        width: 100%;
+    }
+
+    .TextDiv {
+        margin-inline: 20px;
+        margin-block: 50px;
+    }
+
+    .Images {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ImageSecondMain1,
+    .ImageSec2 {
+        width: 100%;
+        margin-inline: 20px;
+        margin-block: 50px;
+    }
+
+    .Images1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Text3 {
+        width: 90%;
+    }
+}

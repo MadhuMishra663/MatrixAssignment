@@ -1,12 +1,12 @@
 import React from 'react'
 import './NavbarMain.css'
-import Navbar1 from './Navbar1'
+// import Navbar1 from './Navbar1'
 import './Navbar1.css'
 
 const NavbarMain = () => {
   return (
     <>
-    <Navbar1 />
+    {/* <Navbar1 /> */}
    
     <div className='Navbarmainbox'>
         <div className='contentText'>

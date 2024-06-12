@@ -1,30 +1,18 @@
-// SlideUpComponent.js
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import './animation.css';
 
-const SlideUpComponent = ({ contents }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % contents.length);
-    }, 6000);
-
-    return () => clearInterval(interval);
-  }, [contents]);
+const ScrollAnimation = ({ children }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   return (
-    <div className="container">
-      {contents.map((content, index) => (
-        <div
-          key={index}
-          className={`content ${index === currentIndex ? 'active' : ''}`}
-        >
-          {content}
-        </div>
-      ))}
+    <div ref={ref} className={`scroll-animation ${inView ? 'animate' : ''}`}>
+      {children}
     </div>
   );
 };
 
-export default SlideUpComponent;
+export default ScrollAnimation;

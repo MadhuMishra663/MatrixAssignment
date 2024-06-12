@@ -3,6 +3,7 @@ import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
 import './tokenomics.css';
 
+
 const Tokenomics = () => {
   const data = {
     labels: ['Partnership/CEX Wallet', 'LP Pool', 'Burned', 'BNB LP Pool'],
@@ -28,20 +29,7 @@ const Tokenomics = () => {
 
   return (
     <div className="tokenomics">
-      <header className="header">
-        <h1>A.I. GEN</h1>
-        <nav>
-          <ul>
-            <li>Features</li>
-            <li>Roadmap</li>
-            <li>Tokenomics</li>
-          </ul>
-        </nav>
-        <div className="actions">
-          <button>Whitepaper</button>
-          <button>Get Started</button>
-        </div>
-      </header>
+     
 
       <main className="main-content">
         <h2>Tokenomics</h2>

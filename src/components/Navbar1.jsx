@@ -17,7 +17,13 @@ const Navbar1 = () => {
             <button className='getStartedText'>Get Started</button>
           </div>
        </div>
+       <div>
+       <span className="material-symbols-outlined">
+menu
+</span>
        </div>
+       </div>
+      
     </>
   )
 }

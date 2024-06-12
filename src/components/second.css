@@ -5,6 +5,7 @@ body{
 
 .ImageSecondMain1{
     width: 100%;
+    
   
     
 }
@@ -45,7 +46,7 @@ opacity: 0px;
 }
 .TextOnimag1{
     position: absolute;
-    top: 50%;
+    top: 13%;
     left: 50%; 
     transform: translate(-50%, -50%);
     text-align: center;
@@ -57,4 +58,86 @@ opacity: 0px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+@media (max-width: 600px) {
+    .Images1 {
+        grid-template-columns: repeat(7, 1fr);
+        gap: 20px;
+       
+    }
+    .Imag1 {
+        line-height: 50px;
+        > img {
+            width: 50.31px;
+            height: 50px;
+            filter: brightness(50%);
+            border-radius: 10px;
+            opacity: 1;
+        }
+    }
+    .ImageSec2 {
+        width: 90%; /* Adjust width to be proportional */
+        margin-inline: auto; /* Centering the div */
+        margin-block: 50px;
+        overflow: hidden;
+    }
+    .TextOnimag1 {
+        font-size:x-small; /* Keep font size consistent */
+        margin-top: -350px;
+         margin-left: auto;
+        
+    }
+    .CreateText {
+        font-size: 1rem; /* Keep font size consistent */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .Images1 {
+        grid-template-columns: repeat(7, 1fr);
+        gap: 30px;
+    }
+    .Imag1 {
+        line-height: 60px;
+        > img {
+            width: 80.31px;
+            height: 80px;
+            filter: brightness(50%);
+            border-radius: 10px;
+            opacity: 1;
+        }
+    }
+    .ImageSec2 {
+        width: 80%; /* Adjust width to be proportional */
+        margin-inline: auto; /* Centering the div */
+        margin-block: 100px;
+    }
+    .TextOnimag1 {
+        font-size: smaller; /* Keep font size consistent */
+         margin-top: -350px;
+         margin-left: auto;
+       
+    }
+    .CreateText {
+        font-size: 1rem; /* Keep font size consistent */
+    }
+}
+
+@media (min-width: 1025px) {
+    .ImageSecondMain1 {
+        width: 100%;
+    }
+    .Imag1 {
+        line-height: 70px;
+        > img {
+            width: 140.31px;
+            height: 140px;
+            filter: brightness(50%);
+            border-radius: 10px;
+            opacity: 1;
+        }
+    }
+    
+   
 }

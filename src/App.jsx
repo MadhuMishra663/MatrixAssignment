@@ -1,40 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import  './components/Navbar1.css'
-import './components/NavbarMain.css'
-import './components/second.css'
-import './components/MovingNav.css'
-import './components/getstarted.css'
-import './components/tokenomics.css'
 
-import SlideUpComponent from './Animation/SlideUp'
+import React from 'react';
+import './App.css';
 
+import Navbar1 from './components/Navbar1'
 import NavbarMain from './components/NavbarMain'
 import Second from './components/Second'
 import Third from './components/Third'
-import MovingNav from './components/MovingNav'
+import MovingNav from './components/MovingNav';
+import Tokenomics from './components/Tokenomics'
 import AnimationPage1 from './components/AnimationPage1'
 import GetStarted from './components/GetStarted'
-import Tokenomics from './components/Tokenomics'
-
+import './components/Navbar1.css'
+import './components/NavbarMain.css'
+import './components/second.css'
+import './components/Third.css'
+import './components/MovingNav.css'
+import './components/tokenomics.css'
+import './components/AnimationPage.css'
+import './components/getstarted.css'
+import ScrollAnimation from './Animation/SlideUp';
 
 
 function App() {
-  const contents = [ <NavbarMain />, <Second />, <Third />, <MovingNav />,<Tokenomics />,<AnimationPage1 />,<GetStarted/>];
-
-  
-
   return (
-    <>
-     
-    <div className='mainDiv'>
-        
-        <SlideUpComponent  contents={contents} />
-      </div>
-    </>
-  )
+    <div className="App">
+      <header className="App-header">
+      
+      </header>
+      <main>
+        <div className="spacer">
+        <ScrollAnimation>
+          <div className='nav'>
+          <Navbar1/>
+          </div>
+          <NavbarMain />
+          <br/>
+          <br/>
+          <Second />
+          <Third />
+          <MovingNav />
+          <Tokenomics />
+          <AnimationPage1 />
+          <div className='get'>
+          <GetStarted />
+          </div>
+        </ScrollAnimation>
+        </div>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
+
